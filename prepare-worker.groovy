@@ -53,7 +53,7 @@ node {
 
             }
 }
-}
+
   else {
     error 'Please enter valid IP address'
 }
