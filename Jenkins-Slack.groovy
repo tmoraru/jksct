@@ -11,4 +11,7 @@ node {
   stage("Send Notification to Slack"){
     slackSend color: '#BADA55', message: 'Finished deployment!'
   }
+
+  
 }
+
