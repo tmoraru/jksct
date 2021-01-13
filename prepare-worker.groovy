@@ -33,9 +33,9 @@ node {
         sh 'ssh -o StrictHostKeyChecking=no -i $SSHKEY  $SSHUSERNAME@${nodeIP} yum install ansible  -y'
     }
 
-  
+            }
 }
-
+}
   else {
     error 'Please enter valid IP address'
 }
