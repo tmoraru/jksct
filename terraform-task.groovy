@@ -3,10 +3,8 @@ node{
         git branch: 'solution', changelog: false, poll: false, url: 'https://github.com/ikambarov/terraform-task.git'
     }
     stage("Terraform Init"){
-        ssh '''
-        cd sandbox/
-        terraform init
-        ''' 
+        ssh ' terraform-0.13 version'
+        
     }
 
     stage("Pull Terraform Apply"){
