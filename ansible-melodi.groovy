@@ -9,7 +9,7 @@ properties([
         ])
     ])
 
-if (nodeIP?.trim()) {
+if (nodeIP?.trim()) { 
     node {
         withCredentials([sshUserPrivateKey(credentialsId: 'jenkins-master-ssh-key', keyFileVariable: 'SSHKEY', passphraseVariable: '', usernameVariable: 'SSHUSERNAME')]) {
             stage('Pull Repo') {
